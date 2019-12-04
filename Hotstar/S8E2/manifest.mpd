@@ -11,13 +11,7 @@
         <cenc:pssh>AAAAQHBzc2gAAAAA7e+LqXnWSs6jyCfc1R0h7QAAACAIARIQvCb/kFtcSHmo8OlDiyEqVRoDaGVzIgUXcABRIg==</cenc:pssh>
       </ContentProtection>
       <SegmentTemplate duration="4000" initialization="$RepresentationID$/init.mp4" media="$RepresentationID$/seg-$Number$.m4s" startNumber="1" timescale="1000"/>
-      <Representation bandwidth="197447" codecs="avc1.42C00C" frameRate="25" height="180" id="video/avc1/1" scanType="progressive" width="320"/>
       <Representation bandwidth="426770" codecs="avc1.42C015" frameRate="25" height="240" id="video/avc1/2" scanType="progressive" width="426"/>
-      <Representation bandwidth="676770" codecs="avc1.4D401E" frameRate="25" height="360" id="video/avc1/3" scanType="progressive" width="640"/>
-      <Representation bandwidth="1003071" codecs="avc1.4D401F" frameRate="25" height="480" id="video/avc1/4" scanType="progressive" width="854"/>
-      <Representation bandwidth="1278981" codecs="avc1.640028" frameRate="25" height="540" id="video/avc1/5" scanType="progressive" width="900"/>
-      <Representation bandwidth="1970847" codecs="avc1.640028" frameRate="25" height="720" id="video/avc1/6" scanType="progressive" width="1280"/>
-      <Representation bandwidth="3269947" codecs="avc1.640028" frameRate="25" height="1080" id="video/avc1/7" scanType="progressive" width="1920"/>
     </AdaptationSet>
     <!-- Audio -->
     <AdaptationSet mimeType="audio/mp4" segmentAlignment="true" startWithSAP="1">
@@ -28,13 +22,7 @@
         <cenc:pssh>AAAAQHBzc2gAAAAA7e+LqXnWSs6jyCfc1R0h7QAAACAIARIQvCb/kFtcSHmo8OlDiyEqVRoDaGVzIgUXcABRIg==</cenc:pssh>
       </ContentProtection>
       <SegmentTemplate duration="4000" initialization="$RepresentationID$/init.mp4" media="$RepresentationID$/seg-$Number$.m4s" startNumber="1" timescale="1000"/>
-      <Representation audioSamplingRate="48000" bandwidth="40028" codecs="mp4a.40.2" id="audio/und/mp4a/1">
-        <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2"/>
-      </Representation>
       <Representation audioSamplingRate="48000" bandwidth="72087" codecs="mp4a.40.2" id="audio/und/mp4a/2">
-        <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2"/>
-      </Representation>
-      <Representation audioSamplingRate="48000" bandwidth="135997" codecs="mp4a.40.2" id="audio/und/mp4a/3">
         <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2"/>
       </Representation>
     </AdaptationSet>
