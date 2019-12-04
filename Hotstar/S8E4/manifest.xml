@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<MPD mediaPresentationDuration="PT1H13M55.320S" minBufferTime="PT4.00S" profiles="urn:mpeg:dash:profile:isoff-live:2011" type="static" xmlns="urn:mpeg:dash:schema:mpd:2011" xmlns:cenc="urn:mpeg:cenc:2013">
+  <!-- Created with Bento4 mp4-dash.py, VERSION=1.8.0-627 -->
+  <Period>
+    <!-- Video -->
+    <AdaptationSet maxHeight="1080" maxWidth="1920" mimeType="video/mp4" segmentAlignment="true" startWithSAP="1">
+      <!-- MPEG Common Encryption -->
+      <ContentProtection cenc:default_KID="66772c69-e282-4fde-ba11-51b33f6eb319" schemeIdUri="urn:mpeg:dash:mp4protection:2011" value="cenc"/>
+      <!-- Widevine -->
+      <ContentProtection schemeIdUri="urn:uuid:edef8ba9-79d6-4ace-a3c8-27dcd51d21ed">
+        <cenc:pssh>AAAAQHBzc2gAAAAA7e+LqXnWSs6jyCfc1R0h7QAAACAIARIQZncsaeKCT966EVGzP26zGRoDaGVzIgUXcABRdA==</cenc:pssh>
+      </ContentProtection>
+      <SegmentTemplate duration="4000" initialization="$RepresentationID$/init.mp4" media="$RepresentationID$/seg-$Number$.m4s" startNumber="1" timescale="1000"/>
+      <Representation bandwidth="198177" codecs="avc1.42C00C" frameRate="25" height="180" id="video/avc1/1" scanType="progressive" width="320"/>
+      <Representation bandwidth="426016" codecs="avc1.42C015" frameRate="25" height="240" id="video/avc1/2" scanType="progressive" width="426"/>
+      <Representation bandwidth="674693" codecs="avc1.4D401E" frameRate="25" height="360" id="video/avc1/3" scanType="progressive" width="640"/>
+      <Representation bandwidth="1000566" codecs="avc1.4D401F" frameRate="25" height="480" id="video/avc1/4" scanType="progressive" width="854"/>
+      <Representation bandwidth="1272006" codecs="avc1.640028" frameRate="25" height="540" id="video/avc1/5" scanType="progressive" width="900"/>
+      <Representation bandwidth="2023334" codecs="avc1.640028" frameRate="25" height="720" id="video/avc1/6" scanType="progressive" width="1280"/>
+      <Representation bandwidth="3359010" codecs="avc1.640028" frameRate="25" height="1080" id="video/avc1/7" scanType="progressive" width="1920"/>
+    </AdaptationSet>
+    <!-- Audio -->
+    <AdaptationSet mimeType="audio/mp4" segmentAlignment="true" startWithSAP="1">
+      <!-- MPEG Common Encryption -->
+      <ContentProtection cenc:default_KID="66772c69-e282-4fde-ba11-51b33f6eb319" schemeIdUri="urn:mpeg:dash:mp4protection:2011" value="cenc"/>
+      <!-- Widevine -->
+      <ContentProtection schemeIdUri="urn:uuid:edef8ba9-79d6-4ace-a3c8-27dcd51d21ed">
+        <cenc:pssh>AAAAQHBzc2gAAAAA7e+LqXnWSs6jyCfc1R0h7QAAACAIARIQZncsaeKCT966EVGzP26zGRoDaGVzIgUXcABRdA==</cenc:pssh>
+      </ContentProtection>
+      <SegmentTemplate duration="4000" initialization="$RepresentationID$/init.mp4" media="$RepresentationID$/seg-$Number$.m4s" startNumber="1" timescale="1000"/>
+      <Representation audioSamplingRate="48000" bandwidth="40049" codecs="mp4a.40.2" id="audio/und/mp4a/1">
+        <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2"/>
+      </Representation>
+      <Representation audioSamplingRate="48000" bandwidth="72005" codecs="mp4a.40.2" id="audio/und/mp4a/2">
+        <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2"/>
+      </Representation>
+      <Representation audioSamplingRate="48000" bandwidth="136101" codecs="mp4a.40.2" id="audio/und/mp4a/3">
+        <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2"/>
+      </Representation>
+    </AdaptationSet>
+  </Period>
+</MPD>
